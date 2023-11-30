@@ -51,6 +51,22 @@
     .down_sectwo
         display: flex
         justify-content: center
+        position: relative
+        &::before
+            content: ""
+            width: 12%
+            border-bottom: 4px dashed #028dff
+            position: absolute
+            left: 29vw
+            top: 5vh
+        &::after
+            content: ""
+            width: 12%
+            border-bottom: 4px dashed #028dff
+            position: absolute
+            right: 29vw
+            top: 5vh   
+
         div
             width: 30%
             display: flex
@@ -60,15 +76,23 @@
             div
                 width: 100px
                 height: 100px
-                font-size: 3vw
-                border: 1px solid black
+                font-size: 2vw
+                color: #005eff
+                border: 1px solid #c5c5c5
                 border-radius: 50%
-            h2
-                font-weight: bold
+            h3
+                font-weight: medium
             p
                 width: 80%
                 text-align: center
-
+                color: #c5c5c5
+                
+.sec3_bgc
+    background-image: url("../img/blockqoute-bg.jpg")
+    opacity: 70%
+    background-size: cover
+    width: 100% !important
+    height: 20vh !important
 .secthree
     display: flex
     justify-content: center
@@ -78,13 +102,14 @@
     font-size: 2vw
     border: 1px solid white
     border-radius: 50%
-
+.sec4
+    width: 80%
 .secfoor_video
     video
         width: 100%
 .sec5_contact
     button
-        border: none
+        border: 1px solid #fff
         border-radius: 5px
         padding: 1vw
 .sec6-down
@@ -99,10 +124,12 @@
     background-color: #049bffc1
 .break-carousel
     background-image: url(../img/client-bg.jpg)
-    opacity: 35%
+    opacity: 70%
     background-size: cover
     width: 100% !important
     height: 35vh !important
+    img
+        width: 10%
 
 .form
     display: flex

@@ -11929,6 +11929,23 @@ nav .container-fluid .nav_links, nav .container-sm .nav_links, nav .container-md
 .section2 .down_sectwo {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.section2 .down_sectwo::before {
+  content: "";
+  width: 12%;
+  border-bottom: 4px dashed #028dff;
+  position: absolute;
+  left: 29vw;
+  top: 5vh;
+}
+.section2 .down_sectwo::after {
+  content: "";
+  width: 12%;
+  border-bottom: 4px dashed #028dff;
+  position: absolute;
+  right: 29vw;
+  top: 5vh;
 }
 .section2 .down_sectwo div {
   width: 30%;
@@ -11940,16 +11957,26 @@ nav .container-fluid .nav_links, nav .container-sm .nav_links, nav .container-md
 .section2 .down_sectwo div div {
   width: 100px;
   height: 100px;
-  font-size: 3vw;
-  border: 1px solid black;
+  font-size: 2vw;
+  color: #005eff;
+  border: 1px solid #c5c5c5;
   border-radius: 50%;
 }
-.section2 .down_sectwo div h2, .section2 .down_sectwo div .h2 {
-  font-weight: bold;
+.section2 .down_sectwo div h3, .section2 .down_sectwo div .h3 {
+  font-weight: medium;
 }
 .section2 .down_sectwo div p {
   width: 80%;
   text-align: center;
+  color: #c5c5c5;
+}
+
+.sec3_bgc {
+  background-image: url("../img/blockqoute-bg.jpg");
+  opacity: 70%;
+  background-size: cover;
+  width: 100% !important;
+  height: 20vh !important;
 }
 
 .secthree {
@@ -11963,12 +11990,16 @@ nav .container-fluid .nav_links, nav .container-sm .nav_links, nav .container-md
   border-radius: 50%;
 }
 
+.sec4 {
+  width: 80%;
+}
+
 .secfoor_video video {
   width: 100%;
 }
 
 .sec5_contact button {
-  border: none;
+  border: 1px solid #fff;
   border-radius: 5px;
   padding: 1vw;
 }
@@ -11990,10 +12021,13 @@ nav .container-fluid .nav_links, nav .container-sm .nav_links, nav .container-md
 
 .break-carousel {
   background-image: url(../img/client-bg.jpg);
-  opacity: 35%;
+  opacity: 70%;
   background-size: cover;
   width: 100% !important;
   height: 35vh !important;
+}
+.break-carousel img {
+  width: 10%;
 }
 
 .form {
