@@ -12039,4 +12039,23 @@ nav .container-fluid .nav_links, nav .container-sm .nav_links, nav .container-md
   background-color: #0482e2;
 }
 
+.footer-detail {
+  width: 90%;
+}
+
+.footer-icons {
+  display: flex;
+}
+.footer-icons div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0178ff;
+  color: #fff;
+}
+
 /*# sourceMappingURL=app.css.map */
