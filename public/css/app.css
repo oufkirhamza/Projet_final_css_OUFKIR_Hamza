@@ -11996,4 +11996,34 @@ nav .container-fluid .nav_links, nav .container-sm .nav_links, nav .container-md
   height: 35vh !important;
 }
 
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vh;
+}
+.form input {
+  width: 40%;
+  padding: 2vh;
+  border: 1px solid #a8a8a8;
+}
+.form select {
+  width: 40%;
+  padding: 2vh;
+  border: 1px solid #a8a8a8;
+  color: #a8a8a8;
+}
+.form textarea {
+  width: 83%;
+  padding: 2vh;
+  border: 1px solid #a8a8a8;
+}
+
+.form-book {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=app.css.map */
