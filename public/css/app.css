@@ -11865,6 +11865,45 @@ nav .container-fluid .nav_links, nav .container-sm .nav_links, nav .container-md
   width: 50% !important;
 }
 
+.first-item {
+  background-image: url("../img/slider.jpg");
+  background-size: cover;
+  width: 100% !important;
+  height: 85vh !important;
+}
+
+.carousel_content {
+  width: 40%;
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+}
+
+@media (max-width: 430px) {
+  .carousel_content {
+    width: 100% !important;
+  }
+}
+.second_item {
+  background-image: url("../img/slider2.jpg");
+  background-size: cover;
+  width: 100% !important;
+  height: 85vh !important;
+}
+
+.third_item {
+  background-image: url("../img/slider3.jpg");
+  background-size: cover;
+  width: 100% !important;
+  height: 85vh !important;
+}
+
+.ashom {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
 .section2 {
   display: flex;
   flex-direction: column;
@@ -11939,6 +11978,22 @@ nav .container-fluid .nav_links, nav .container-sm .nav_links, nav .container-md
 }
 .sec6-down div {
   width: 30%;
+}
+
+.sec8-subs {
+  width: 90%;
+}
+
+.sec10 {
+  background-color: rgba(4, 155, 255, 0.7568627451);
+}
+
+.break-carousel {
+  background-image: url(../img/client-bg.jpg);
+  opacity: 35%;
+  background-size: cover;
+  width: 100% !important;
+  height: 35vh !important;
 }
 
 /*# sourceMappingURL=app.css.map */
