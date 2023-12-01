@@ -11,8 +11,19 @@
         display: flex
         justify-content: center
         align-items: center
-        background-color: #0178ff
+        background-color: $main
         color: #fff
+        &:hover
+            background-color: #fff
+            color: $main
+
+.links
+    transition: 0.4s
+    a
+        text-decoration: none
+        color: white
+    &:hover
+        transform: translateX(10px)
 
 @media ( max-width:430px  )
     .footer-copyright

@@ -5,4 +5,20 @@ nav
     .container-fluid
         .nav_links
             width: 50% !important
-
+        .navbar-nav
+            .nav-item
+                position: relative
+                &::after
+                    content: ''
+                    border-bottom: 3px solid $main
+                    width: 0%
+                    position: absolute
+                    left: 0
+                    top: 6.5vh
+                    transition: 1s
+                &:hover
+                    &::after
+                        width: 100%
+                .nav-link
+                    &:hover
+                        color: $main

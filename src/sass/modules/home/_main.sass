@@ -1,12 +1,32 @@
+button,.boton
+    position: relative
+    display: inline-block
+    color: white
+    background-image: linear-gradient(#363636, #363636)
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: 0% 100%
+    transition: background-size .5s, color .5s
+    &:hover
+        background-size: 100% 100%
+        color: #fff
+.botona
+    position: relative
+    display: inline-block
+    color: white
+    background-image: linear-gradient($main, $main)
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: 0% 100%
+    transition: background-size .5s, color .5s
+    &:hover
+        background-size: 100% 100%
+        color: #fff
+
 .first-item
     background-image: url("../img/slider.jpg")
     width: 100% !important
     height: 85vh !important
-.carousel_content
-    width: 40%
-    position: absolute
-    top: 20vh
-    left: 10vw
 
 .second_item
     background-image: url("../img/slider2.jpg")
@@ -19,6 +39,12 @@
     background-size: cover
     width: 100% !important
     height: 85vh !important
+
+.carousel_content
+    width: 40%
+    position: absolute
+    top: 20vh
+    left: 10vw
 .ashom
     width: 50px
     height: 50px
@@ -50,53 +76,58 @@
         &::before
             content: ""
             width: 12%
-            border-bottom: 4px dashed #028dff
+            border-bottom: 4px dashed $main
             position: absolute
             left: 29vw
             top: 5vh
         &::after
             content: ""
             width: 12%
-            border-bottom: 4px dashed #028dff
+            border-bottom: 4px dashed $main
             position: absolute
             right: 29vw
             top: 5vh
-
-        div
+        .down_detail
             width: 30%
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
             div
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
                 width: 100px
                 height: 100px
                 font-size: 2vw
-                color: #005eff
+                color: $main
                 border: 1px solid #c5c5c5
                 border-radius: 50%
+
+                &:hover
+                    background-color: $main
+                    color: #fff
             h3
                 font-weight: medium
             p
                 width: 80%
                 text-align: center
                 color: #c5c5c5
-
 .sec3_bgc
     background-image: url("../img/blockqoute-bg.jpg")
     background-size: cover
+    background-attachment: fixed
     z-index: -2
-    width: 100% !important
-    height: 20vh !important
+    height: 40vh !important
     position: relative
     &::before
         content: ''
         position: absolute
         inset: 0
-        background-color: #0095ff
+        background-color: $main
         opacity: 50%
         z-index: -1
-
 .secthree
     display: flex
     justify-content: center
@@ -106,6 +137,10 @@
     font-size: 2vw
     border: 1px solid white
     border-radius: 50%
+
+    // &:hover
+    //     background-color: #ff0000
+    //     color: #fff
 .sec4-down
     width: 80%
 .secfoor_video
@@ -116,6 +151,7 @@
         border: 1px solid #fff
         border-radius: 5px
         padding: 1vw
+
 .sec7-down
     width: 95%
     div
@@ -123,6 +159,21 @@
 
 .sec8-subs
     width: 90%
+
+.card-body
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 26vh
+        border-bottom: 4px solid $main
+        width: 0%
+        transition: 2s
+        overflow: hidden
+    &:hover
+        &::after
+            width: 100%
 
 .break-carousel
     background-image: url(../img/client-bg.jpg)
@@ -135,12 +186,11 @@
         content: ''
         position: absolute
         inset: 0
-        background-color: #049cfa
+        background-color: $main
         z-index: -1
         opacity: 30%
     img
         width: 10%
-
 .form
     display: flex
     flex-wrap: wrap
@@ -177,15 +227,29 @@
         padding: 2vh 3vw
         color: #fff
         border-radius: 5px
-        background-color: #0482e2
+        background-color: $main
 
+
+
+.back-to-top
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 50px
+    height: 50px
+    background-color: $main
+    border-radius: 10% 
+    position: fixed
+    bottom: 7vh
+    right: 2vw
+    font-size: larger
 @media (max-width:430px)
     .first-item,.second_item,.third_item
         background-size: cover !important
         background-repeat: no-repeat
         height: 40vh !important
     .carousel_content
-        width:100% !important
+        width: 100% !important
         top: 1vh
         left: 5vw
         div

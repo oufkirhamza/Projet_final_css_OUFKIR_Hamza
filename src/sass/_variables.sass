@@ -2,3 +2,9 @@
 @import ../../node_modules/bootstrap/scss/functions
 @import ../../node_modules/bootstrap/scss/variables
 
+$main: #1a76d1
+$light-purple: #edf2ff
+
+$custom-colors: ("bleu": $main,"ligh-bleu": $light-purple,)
+
+$theme-colors: map-merge($custom-colors , $theme-colors)
