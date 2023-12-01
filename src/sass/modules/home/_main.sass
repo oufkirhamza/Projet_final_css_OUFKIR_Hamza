@@ -1,6 +1,5 @@
 .first-item
     background-image: url("../img/slider.jpg")
-    background-size: cover
     width: 100% !important
     height: 85vh !important
 .carousel_content
@@ -8,10 +7,6 @@
     position: absolute
     top: 20vh
     left: 10vw
-
-@media (max-width:430px)
-    .carousel_content
-        width: 100% !important
 
 .second_item
     background-image: url("../img/slider2.jpg")
@@ -65,7 +60,7 @@
             border-bottom: 4px dashed #028dff
             position: absolute
             right: 29vw
-            top: 5vh   
+            top: 5vh
 
         div
             width: 30%
@@ -86,13 +81,22 @@
                 width: 80%
                 text-align: center
                 color: #c5c5c5
-                
+
 .sec3_bgc
     background-image: url("../img/blockqoute-bg.jpg")
-    opacity: 70%
     background-size: cover
+    z-index: -2
     width: 100% !important
     height: 20vh !important
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        inset: 0
+        background-color: #0095ff
+        opacity: 50%
+        z-index: -1
+
 .secthree
     display: flex
     justify-content: center
@@ -102,7 +106,7 @@
     font-size: 2vw
     border: 1px solid white
     border-radius: 50%
-.sec4
+.sec4-down
     width: 80%
 .secfoor_video
     video
@@ -112,7 +116,7 @@
         border: 1px solid #fff
         border-radius: 5px
         padding: 1vw
-.sec6-down
+.sec7-down
     width: 95%
     div
         width: 30%
@@ -120,14 +124,20 @@
 .sec8-subs
     width: 90%
 
-.sec10
-    background-color: #049bffc1
 .break-carousel
     background-image: url(../img/client-bg.jpg)
-    opacity: 70%
     background-size: cover
     width: 100% !important
     height: 35vh !important
+    position: relative
+    z-index: -2
+    &::before
+        content: ''
+        position: absolute
+        inset: 0
+        background-color: #049cfa
+        z-index: -1
+        opacity: 30%
     img
         width: 10%
 
@@ -139,23 +149,22 @@
     input
         width: 40%
         padding: 2vh
-        border:1px solid #a8a8a8
+        border: 1px solid #a8a8a8
     select
         width: 40%
         padding: 2vh
-        border:1px solid #a8a8a8
+        border: 1px solid #a8a8a8
         color: #a8a8a8
     textarea
         width: 83%
         padding: 2vh
-        border:1px solid #a8a8a8
+        border: 1px solid #a8a8a8
 
 .form-book
     width: 80%
     display: flex
     align-items: center
     justify-content: space-between
-    button
 
 .signews
     input
@@ -170,19 +179,99 @@
         border-radius: 5px
         background-color: #0482e2
 
-.footer-detail
-    width: 90%   
-
-.footer-icons
-    display: flex
-    div
-        width: 50px
-        height: 50px
-        border:1px solid #fff
-        border-radius: 50%
+@media (max-width:430px)
+    .first-item,.second_item,.third_item
+        background-size: cover !important
+        background-repeat: no-repeat
+        height: 40vh !important
+    .carousel_content
+        width:100% !important
+        top: 1vh
+        left: 5vw
+        div
+            button
+                width: 90%
+    .up_sectwo
+        width: 96% !important
+        font-size: medium !important
+        h1
+            width: 100%
+            text-align: center
+        p
+            width: 100%
+            text-align: center
+    .down_sectwo
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .down_detail
+            width: 100% !important
+        &::before
+            display: none
+        &::after
+            display: none
+    .sec3_bgc
         display: flex
         justify-content: center
         align-items: center
-        background-color: #0178ff
-        color: #fff
-        
+        width: 100% !important
+        height: 120vh !important
+        div
+            height: 100%
+            div
+                padding: 2vh
+    .sec4_up
+        width: 90% !important
+    .sec
+        .sec4-down
+            width: 90% !important
+            .sec4-down-left
+                width: 100% !important
+            .sec4-down-right
+                .down-detail
+                    width: 90% !important
+            .secfoor_video
+                width: 100% !important
+                video
+                    object-fit: cover
+                    height: 50vh
+    .sec5
+        width: 90% !important
+    .sec6
+        width: 90% !important
+    .sec6-down
+        width: 90%
+        align-items: center !important
+    .sec7
+        width: 90% !important
+    .sec7-down
+        div
+            width: 90%
+
+    .sec8
+        width: 90%
+    .sec8-subs
+        width: 90% !important
+        .sec8-subs-detail
+            width: 100% !important
+    .sec9
+        width: 90% !important
+    .section10
+        height: 100vh
+    .break-carousel
+        height: 100% !important
+        img
+            width: 50%
+    .sec11
+        width: 90% !important
+    .form
+        width: 90% !important
+        input
+            width: 100% !important
+    .form-img
+        img
+            width: 100% !important
+    .signews
+        justify-content: space-between
+        input
+            width: 90%
