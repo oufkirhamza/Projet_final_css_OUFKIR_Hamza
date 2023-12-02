@@ -12083,7 +12083,7 @@ button, .boton {
 }
 button:hover, .boton:hover {
   background-size: 100% 100%;
-  color: #fff;
+  color: #fff !important;
 }
 
 .botona {
@@ -12098,7 +12098,7 @@ button:hover, .boton:hover {
 }
 .botona:hover {
   background-size: 100% 100%;
-  color: #fff;
+  color: #fff !important;
 }
 
 .first-item {
